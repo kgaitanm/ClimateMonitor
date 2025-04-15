@@ -32,6 +32,7 @@ public class EvaluateReadingTests
 
         var response = await httpClient.PostAsJsonAsync(
             $"/readings/evaluate", 
+
             new DeviceReadingRequest()
             {
                 FirmwareVersion = "1.0.0",
